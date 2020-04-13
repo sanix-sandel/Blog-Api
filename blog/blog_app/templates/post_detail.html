@@ -1,10 +1,12 @@
 {% extends 'base.html' %}
 {% block content %}
-<div class="post-entry">
+    <div class="post-entry">
     
-    <h2>{{object.title}}</h2> <!--object can be used instead of post-->
-    <p>{{object.body}}</p>
+        <h2>{{object.title}}</h2> <!--object can be used instead of post-->
+        <p>{{object.body}}</p>
 
-</div>
+    </div>
+    <a href="{% url 'post_edit' post.pk %}">+ Edit Blog post</a>
+    <a href="{% url 'post_delete' post.pk %}">- Delete Blog post</a>
 
 {% endblock content %}
