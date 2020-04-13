@@ -1,2 +1,2 @@
 # Blog-Api
-A basic Django Api 
+A basic Django Blog Api 
